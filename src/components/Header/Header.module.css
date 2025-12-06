@@ -1,0 +1,28 @@
+.section {
+  padding: 28px 0;
+  background-color: var(--inputs);
+}
+
+.containerWrapper {
+  display: flex;
+  font-family: var(--font-family);
+  gap: 450px;
+}
+
+.list {
+  display: flex;
+  gap: 32px;
+}
+
+.listItemLink {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  color: var(--main);
+}
+
+.listItemLink:hover,
+.listItemLink:focus {
+  color: var(--button-hover);
+}
