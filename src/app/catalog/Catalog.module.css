@@ -1,0 +1,36 @@
+.container {
+  display: flex;
+  gap: 64px;
+  padding-top: 48px;
+}
+
+.grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+.loadMore {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 8px;
+  margin-bottom: 52px;
+
+  border: 1px solid var(--gray-light);
+  border-radius: 200px;
+  padding: 16px 32px;
+  width: 145px;
+  height: 56px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+
+  white-space: nowrap;
+
+  background-color: var(--white);
+}

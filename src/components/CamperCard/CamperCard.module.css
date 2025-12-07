@@ -144,3 +144,7 @@
 
   white-space: nowrap;
 }
+
+.actions {
+  width: 166px;
+}
