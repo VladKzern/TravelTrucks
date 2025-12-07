@@ -1,0 +1,44 @@
+.section {
+  background-image: url("/bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  height: 100vh;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 0.66667;
+  color: var(--inputs);
+
+  padding-top: 260px;
+  margin-bottom: 16px;
+}
+
+.subTitle {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.33333;
+  color: var(--inputs);
+
+  margin-bottom: 40px;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+
+  border-radius: 200px;
+  padding: 16px 60px;
+  width: 173px;
+  height: 56px;
+
+  background-color: var(--button);
+  color: var(--white);
+
+  white-space: nowrap;
+}
