@@ -1,0 +1,18 @@
+.gallery {
+  display: flex;
+  gap: 48px;
+  overflow-x: auto;
+  padding: 8px 0;
+}
+
+.thumb {
+  flex: 0 0 auto;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.image {
+  object-fit: cover;
+  object-position: 80% center;
+  border-radius: 10px;
+}

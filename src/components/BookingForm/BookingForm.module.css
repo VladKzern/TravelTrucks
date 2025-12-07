@@ -1,0 +1,81 @@
+.bookingFormWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 24px;
+
+  border: 1px solid var(--gray-light);
+  border-radius: 10px;
+  padding: 44px;
+  width: 641px;
+  height: 588px;
+}
+
+.bookingForm {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  width: 100%;
+}
+
+.input {
+  width: 100%;
+  height: 60px;
+  padding: 0 16px;
+
+  border-radius: 8px;
+  border: 1px solid #d0d5dd;
+  font-size: 16px;
+  font-family: var(--font-family);
+}
+
+/* ✅ КОМЕНТАР */
+.textarea {
+  width: 100%;
+  height: 118px;
+  padding: 16px;
+
+  border-radius: 8px;
+  border: 1px solid #d0d5dd;
+  font-size: 16px;
+  resize: none;
+  font-family: var(--font-family);
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+
+  border: none;
+  border-radius: 200px;
+  padding: 16px 60px;
+  width: 166px;
+  height: 56px;
+  margin: 24px auto 0;
+  
+
+  background-color: var(--button);
+  color: var(--white);
+}
+
+.bookingForm button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--gray);
+}
+
+.infoContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 10px;
+}

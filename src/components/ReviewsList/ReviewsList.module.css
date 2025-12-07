@@ -1,0 +1,33 @@
+.reviews {
+  display: flex;
+  flex-direction: column;
+  gap: 44px;
+  width: 631px;
+}
+
+.review {
+  padding: 12px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+  gap: 4px;
+}
+
+.name {
+  font-weight: 600;
+}
+
+.stars {
+  display: flex;
+  gap: 2px;
+}
+
+.comment {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--text);
+}

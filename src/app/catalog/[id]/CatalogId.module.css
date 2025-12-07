@@ -1,0 +1,153 @@
+.rateAndLocContainer {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.rating {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.spanRateContainer {
+  display: flex;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.33333;
+
+  margin-top: 48px;
+}
+
+.text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+}
+
+.price {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.33333;
+
+  margin-bottom: 28px;
+}
+
+.description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--gray);
+
+  margin-bottom: 60px;
+}
+
+.galleryContainer {
+  margin-bottom: 28px;
+}
+
+.tabs {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 24px;
+}
+
+.tabBtn {
+  border: none;
+  background-color: var(--white);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.features {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  width: 631px;
+
+  border-radius: 10px;
+  padding: 44px 80px;
+
+  background-color: var(--inputs);
+}
+
+.featuresList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 32px;
+}
+
+.feature {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 12px 18px;
+  height: 48px;
+  border-radius: 100px;
+
+  background-color: var(--badges);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.featureIcon {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+.stroke {
+  margin-bottom: 44px;
+}
+
+.subTitle {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  margin-bottom: 24px;
+}
+
+.subStroke {
+  width: 100%;
+  stroke-width: 1px;
+  stroke: var(--gray-light);
+  margin-bottom: 24px;
+}
+
+.detailsList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+}
+
+.detailsList li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-size: 14px;
+  font-weight: 500;
+  color: #101828;
+}
+
+.modalAndDetailsContainer {
+  display: flex;
+  gap: 40px;
+}
+
+.upperCase {
+  text-transform: capitalize;
+}
