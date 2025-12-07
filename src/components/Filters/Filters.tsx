@@ -22,7 +22,6 @@ export default function Filters() {
     new Set(campers.map(c => c.location))
   );
 
-  // ✅ toggle для boolean
   const toggleBoolean = (key: keyof CamperFilters) => {
     setLocalFilters(prev => ({
       ...prev,
@@ -30,7 +29,6 @@ export default function Filters() {
     }));
   };
 
-  // ✅ toggle для string
   const setValue = (key: keyof CamperFilters, value: string) => {
     setLocalFilters(prev => {
       if (!value) {
@@ -42,7 +40,6 @@ export default function Filters() {
     });
   };
 
-  // ✅ SUBMIT FORM
   const handleSearch = async (e: React.FormEvent) => {
     e.preventDefault();
 
@@ -61,7 +58,7 @@ export default function Filters() {
   return (
     <form className={css.filters} onSubmit={handleSearch}>
 
-      {/* ✅ LOCATION */}
+      {/* LOCATION */}
       <div className={css.blockLocation}>
         <label htmlFor="location" className={css.blockName}>
           Location
@@ -88,7 +85,7 @@ export default function Filters() {
         </div>
       </div>
 
-      {/* ✅ VEHICLE EQUIPMENT */}
+      {/* VEHICLE EQUIPMENT */}
       
       <p className={css.blockName}>Filters</p>
 
@@ -124,7 +121,7 @@ export default function Filters() {
         </div>
       </div>
 
-      {/* ✅ FORM */}
+      {/* FORM */}
       <div className={css.blockVehicleEquipment}>
         <legend className={css.blockTitle}>Vehicle type</legend>
         <hr className={css.stroke} />
@@ -165,7 +162,6 @@ export default function Filters() {
         </div>
       </div>
 
-      {/* ✅ SEARCH */}
       <button type="submit" className={css.searchBtn}>
         Search
       </button>
