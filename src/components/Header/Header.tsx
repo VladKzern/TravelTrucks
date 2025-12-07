@@ -19,7 +19,7 @@ export default function Header() {
                 <Link href="/" className={css.listItemLink}>Home</Link>
               </li>
               <li className={css.listItem}>
-                <Link href="/Catalog" className={css.listItemLink}>Catalog</Link>
+                <Link href="/catalog" className={css.listItemLink}>Catalog</Link>
               </li>
             </ul>
           </nav>

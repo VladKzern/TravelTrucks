@@ -35,3 +35,8 @@ li {
 button {
   cursor: pointer;
 }
+
+body {
+  font-family: var(--font-family);
+  color: var(--main);
+}
