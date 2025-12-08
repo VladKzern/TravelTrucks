@@ -56,7 +56,7 @@
 }
 
 .favIcon {
-  color: var(--main);
+  fill: var(--main);
   transition: color 0.3s ease, transform 0.2s ease;
 }
 
@@ -65,7 +65,7 @@
 }
 
 .favButton.active .favIcon {
-  color: var(--button);
+  fill: var(--button);
 }
 
 .rateAndLocationContainer {
