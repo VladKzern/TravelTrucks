@@ -12,8 +12,7 @@ export default function FeatureIcon({ icon, className }: FeatureIconProps) {
       viewBox="0 0 26 26"
       preserveAspectRatio="xMidYMid meet"
     >
-      <use href={`symbol-defs.svg#${icon}`} />
-  </svg>
+      <use href={`/symbol-defs.svg#${icon}`} />
+    </svg>
   );
 }
-
