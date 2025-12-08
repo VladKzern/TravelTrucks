@@ -11,9 +11,9 @@
 
 .header {
   display: flex;
-  flex-direction: column;
+  align-items: center;
   margin-bottom: 24px;
-  gap: 4px;
+  gap: 16px;
 }
 
 .name {
@@ -30,4 +30,21 @@
   font-size: 16px;
   line-height: 1.5;
   color: var(--text);
+}
+
+.avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: var(--badges);
+  color: var(--button);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 24px;
+  font-weight: 600;
+  flex-shrink: 0;
+  user-select: none;
 }

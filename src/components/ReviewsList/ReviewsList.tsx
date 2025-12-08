@@ -13,23 +13,32 @@ export default function ReviewsList({ reviews }: ReviewsListProps) {
 
   return (
     <div className={css.reviews}>
-      {reviews.map((r, idx) => (
-        <div key={idx} className={css.review}>
-          <div className={css.header}>
-            <span className={css.name}>{r.reviewer_name}</span>
-            <span className={css.stars}>
-              {[...Array(5)].map((_, i) =>
-                i < r.reviewer_rating ? (
-                  <AiFillStar key={i} color="#f5c518" />
-                ) : (
-                  <AiOutlineStar key={i} color="#f5c518" />
-                )
-              )}
-            </span>
+      {reviews.map((r, idx) => {
+        const firstLetter = r.reviewer_name?.charAt(0).toUpperCase();
+
+        return (
+          <div key={idx} className={css.review}>
+            <div className={css.header}>
+              <div className={css.avatar}>{firstLetter}</div>
+
+              <div>
+                <span className={css.name}>{r.reviewer_name}</span>
+                <span className={css.stars}>
+                  {[...Array(5)].map((_, i) =>
+                    i < r.reviewer_rating ? (
+                      <AiFillStar key={i} color="#f5c518" />
+                    ) : (
+                      <AiOutlineStar key={i} color="#f5c518" />
+                    )
+                  )}
+                </span>
+              </div>
+            </div>
+
+            <p className={css.comment}>{r.comment}</p>
           </div>
-          <p className={css.comment}>{r.comment}</p>
-        </div>
-      ))}
+        );
+      })}
     </div>
   );
 }
