@@ -50,9 +50,7 @@ export default function Filters() {
 
     await setFilters(filtersToSend);
 
-    setLocalFilters({
-      ...filters,
-    });
+    setLocalFilters({});
   };
 
   return (
